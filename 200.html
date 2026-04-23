@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="/spinner.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        
+		<link rel="modulepreload" href="/_app/immutable/entry/start.XU9omt1n.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BatXEXzt.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/p0zclBvT.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.CvckJpui.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/PPVm8Dsz.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Oo8PrFQP.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CN1Dd--S.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BzA4gJmO.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BTsauCEp.js">
+    </head>
+
+    <body>
+        <span class="spin" id="loading-spinner"></span>
+        <div>
+			<script>
+				{
+					__sveltekit_18n4ev = {
+						base: new URL('.', location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.XU9omt1n.js"),
+						import("/_app/immutable/entry/app.CvckJpui.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('/service-worker.js', {"scope":"/"});
+						});
+					}
+				}
+			</script>
+		</div>
+    </body>
+</html>
